@@ -1,9 +1,6 @@
 import React from 'react';
 import Popular from './Popular';
-var ReactRouter = require('react-router-dom');
-var Router = ReactRouter.BrowserRouter;
-var Route = ReactRouter.Route;
-var Switch = ReactRouter.Switch;
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './Nav';
 import Home from './Home';
 import Battle from './Battle';
@@ -20,9 +17,7 @@ class App extends React.Component {
                         <Route exact path='/battle' component={Battle} />
                         <Route path='/battle/results' component={Results} />
                         <Route path='/popular' component={Popular} />
-                        <Route render={function() {
-                            return <p>404! Not found</p>
-                        }} />
+                        <Route render={() => <p>404! Not found</p>} />
                     </Switch>
                 </div>
             </Router>
@@ -30,4 +25,4 @@ class App extends React.Component {
     };
 }
 
-module.exports = App;
+export default App;
