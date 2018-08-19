@@ -6,3 +6,4 @@
 
 ![Catalin's React Certificate](https://i.imgur.com/bezsMVN.png)
 
+![Catalin's ES6 Certificate](https://i.imgur.com/j52e45m.jpg)
